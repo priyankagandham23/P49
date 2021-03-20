@@ -37,18 +37,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">About</a>
             </li>
            
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">ContactUs</a>
             </li>
           </ul>
         
         </div>
+        <button class="btn btn-primary m-1" data-target="#signin" data-toggle="modal">SignUp</button>
+<button class="btn btn-primary" data-target="#signin" data-toggle="modal">SignUp</button>
       </nav>
 <!-- Carousel One -->
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -132,6 +134,30 @@
 </div>
 </div>
 
+<div class="modal" id="signin">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+
+          </div>
+          <div class="modal-body">
+              <form class="needs-validation" novalidate>
+                  <input type="text" class="form-control" placeholder="Enter your username" required>
+                  <span class="invalid-feedback">Please enter your name</span>
+                  <input type="password" pattern="(?![0-9_])(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@#]).{8,12}" class="form-control" placeholder="Enter your password" required>
+                  <span class="invalid-feedback"></span>
+                  <input type="text" pattern="[0-9]{10}" name="s1" class="form-control" placeholder="Enter your mobile number" required>
+                  <span class="invalid-feedback">Please enter your 10 digits mobile number</span>
+                  
+                  
+                  <input type="submit" value="Login">
+                  
+                  </form>    
+                  
+          </div>
+      </div>
+  </div>
+</div>
 
 
 
